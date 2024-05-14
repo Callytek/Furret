@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#235B4E">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans Variable'],
+            noto: ['Noto Serif Variable'],
+            source: ['Source Sans Pro'],
+          }
+        }
+      }
+    }
+  </script>
+  <title>CETES</title>
+</head>
+<body>
+  <header class="w-full bg-[#235B4E] py-5 px-2.5">
+    <div class="max-w-screen-xl mx-auto w-full flex justify-between items-center">
+      <img src="/images/cover-hero-one.png" alt="" class="w-1/2 flex-1 max-h-8 sm:max-h-16 object-contain max-w-[100px] sm:max-w-[230px]" >
+      <img src="/images/cover-hero-two.png" alt="" class="w-1/2 flex-1 max-h-8 sm:max-h-16 object-contain max-w-[100px] sm:max-w-[300px]" >
+    </div>
+  </header>
+  <main>
+    <section class="w-full py-12 px-2.5 bg-center bg-no-repeat bg-cover hero sm:pt-52 sm:pb-12">
+      <div class="w-full max-w-screen-xl mx-auto flex flex-col items-center justify-center sm:items-stretch sm:flex-row gap-2.5">
+        <video src="" class="bg-white aspect-video w-full object-contain max-h-[617px]"></video>
+        <form id="form" class="w-full bg-[#69A63F] max-w-[350px] p-4 pt-8 text-white">
+          <h2 class="w-full mb-4 text-center font-noto text-[19px] leading-[25px] font-black uppercase tracking-wider">Empezar hoy</h2>
+          <div class="w-full flex flex-col gap-5 items-center justify-center">
+            <label for="name" class="w-full">
+              <p class="text-start text-xs leading-6 font-bold mb-[5px]">Nombre</p>
+              <input id="name" name="name" type="text" class="w-full input text-black placeholder:text-[#495057] bg-[#ECECEC] rounded-[5px] border border-[#CED4DA] font-source text-sm leading-[17px] placeholder:font-source placeholder:text-sm placeholder:leading-[17px]" placeholder="Pedro">
+            </label>
+            <label for="lastname" class="w-full">
+              <p class="text-start text-xs leading-6 font-bold mb-[5px]">Apellido</p>
+              <input id="lastname" name="lastname" type="text" class="w-full input text-black placeholder:text-[#495057] bg-[#ECECEC] rounded-[5px] border border-[#CED4DA] font-source text-sm leading-[17px] placeholder:font-source placeholder:text-sm placeholder:leading-[17px]" placeholder="Sanchez">
+            </label>
+            <label for="email" class="w-full">
+              <p class="text-start text-xs leading-6 font-bold mb-[5px]">Correo electrónico</p>
+              <input id="email" name="email" type="email" class="w-full input text-black placeholder:text-[#495057] bg-[#ECECEC] rounded-[5px] border border-[#CED4DA] font-source text-sm leading-[17px] placeholder:font-source placeholder:text-sm placeholder:leading-[17px]" placeholder="pedrosanchez@gmail.com">
+            </label>
+            <label for="phone" class="w-full">
+              <p class="text-start text-xs leading-6 font-bold mb-[5px]">Teléfono</p>
+              <input id="phone" name="phone" type="tel" class="w-full input text-black placeholder:text-[#495057] bg-[#ECECEC] rounded-[5px] border border-[#CED4DA] font-source text-sm leading-[17px] placeholder:font-source placeholder:text-sm placeholder:leading-[17px]" placeholder="222 123 4567">
+            </label>
+            <label for="terms" class="w-full flex justify-start items-center gap-[5px]">
+              <input id="terms" name="terms" type="checkbox" class="input size-[13px] rounded-[2.5px]">
+              <p class="text-[8px] leading-[10px]">Confirmo mi disposición para atender la llamada del asesor</p>
+            </label>
+            <button type="submit" class="btn bg-[#034872] rounded-[4px] w-full p-4 uppercase text-lg leading-6 font-bold">Registrarse ahora</button>
+          </div>
+          <img src="/images/form-decoration.png" alt="" class="w-full max-h-5 object-contain mt-2.5 mb-3.5">
+          <span class="block text-center text-[11px] leading-[15px] mx-auto">
+            Para invertir, usted debe ser mayor de 18 años.
+            <span class="block font-bold">El Capital mínimo requerido es de MX$4.500</span>
+          </span>
+        </form>
+      </div>
+    </section>
+
+    <section class="w-full bg-[#235B4E] py-12 px-2.5">
+      <div class="w-full max-w-screen-xl mx-auto">
+        <h2 class="text-center mb-2.5 text-white text-xl sm:text-[40px] sm:leading-[52px] font-bold">
+          ¿Cómo empezar a ganar con el programa?
+        </h2>
+        <p class="text-center text-base sm:text-xl sm:leading-[34px] mb-10 text-white">
+          Invirtiendo en el programa
+          <span class="font-bold">Oil Profit™</span>
+          podrías generar ingresos extras
+        </p>
+        <div class="flex flex-col justify-center items-center gap-8 sm:flex-row sm:flex-wrap sm:items-stretch">
+          <article class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-one.svg" alt="" class="block mx-auto mb-2.5">
+            <h3 class="text-center text-[19px] leading-6">
+              Regístrese en el formulario
+            </h3>
+          </article>
+          <article class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-two.svg" alt="" class="block mx-auto mb-2.5">
+            <h3 class="text-center text-[19px] leading-6">
+              Espere la llamada de su experto financiero y confirme su registro
+            </h3>
+          </article>
+          <article class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-three.svg" alt="" class="block mx-auto mb-2.5">
+            <h3 class="text-center text-[19px] leading-6">
+              Haga su primer depósito y comience a ganar
+              <span class="text-[13px] leading-6 text-center block mt-2.5 text-[#757575]">Inversión mínima MX$4500</span>
+            </h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-[#034872] text-white px-5 py-8">
+      <div class="w-full max-w-screen-xl mx-auto sm:flex sm:justify-center sm:items-center md:justify-end">
+        <img src="/images/cover.png" alt="" class="w-full object-contain mask mb-5 sm:order-2 sm:w-1/2 sm:max-w-[870px] sm:mb-0 sm:self-end md:w-2/3">
+        <div class="w-full sm:max-w-[360px]">
+          <h2 class="text-xl sm:text-[40px] sm:leading-[52px] font-bold mb-5">
+            Invierta con <span class="text-[#69A63F]">Oil Profit™</span> Pemex
+          </h2>
+          <p class="text-sm sm:text-lg sm:leading-6">
+            <span class="block mb-5">El programa <span class="font-bold">Oil Profit™</span> de Pemex ofrece
+            una oportunidad única para inversores
+            que buscan beneficios rápidos en medio
+            de la actual crisis petrolera provocada el
+            contexto mundial y la escasez mundial del
+            petróleo.</span>
+            <span class="block mb-5">La volatilidad del mercado y la experiencia
+            de Pemex hacen que esta inversión sea
+            atractiva en un momento crucial para el
+            petróleo.</span>
+          </p>
+          <a href="/#form" class="max-w-max bg-[#69A63F] block py-2.5 px-6 rounded-full text-[21px] leading-[31px] font-bold text-center">
+            Empezar ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-8 px-2.5 sm:px-4">
+      <div class="w-full font-bold">
+        <h2 class="text-center text-[#1C83C6] text-base sm:text-[40px] sm:leading-[52px] mb-8">
+          Calcule sus ganancias potenciales con Cetes Directo
+        </h2>
+        <div class="slider w-full max-w-[900px] mx-auto rounded-[20px] bg-white p-5">
+          <h3 class="text-center text-[#777777] text-base sm:text-[32px] sm:leading-[40px] mb-3.5">
+            Inversión inicial MXN <span id="initial">$4,500.00</span>
+          </h3>
+          <div class="range w-full mb-5 relative z-0">
+            <div id="range-mask" class="w-full h-[14px] rounded-full absolute -z-[1] top-1 bg-[#CCCCCC]"></div>
+            <input class="w-full h-[14px] bg-transparent rounded-full appearance-none" value="4500" type="range" name="range" id="range" min="4500" max="22500">
+            <span id="amount">$4,500.00</span#>
+          </div>
+          <p class="text-center text-sm sm:text-[21px] sm:leading-7 text-[#939393] mb-5">
+            Ganancias Potenciales
+          </p>
+          <p class="text-center text-[#69A63F] text-xl sm:text-[62px] sm:leading-[80px]">
+            MXN <span id="potencial">$22,500.00</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-[#034872] py-10 px-5 text-white text-center sm:text-start sm:pb-0">
+      <div class="w-full max-w-screen-xl mx-auto sm:flex sm:justify-center sm:items-center">
+        <div class="w-full sm:flex-1 sm:order-2 max-w-[450px] sm:py-16">
+          <h2 class="w-full text-xl sm:text-[40px] sm:leading-[52px] mb-5 font-bold">
+            Confiable para todos
+          </h2>
+          <p class="w-full text-base sm:text-lg sm:leading-6">
+            <span class="block mb-5">La nueva plataforma inteligente del programa <span class="font-bold">Oil
+            Profit™,</span> puede copiar automáticamente las
+              mejores operaciones de compra y venta del
+              mercado en activos pretolificos.</span>
+            <span class="block">Encuentra, opera e imita los movimientos de los
+              mejores inversores del mercado en tiempo real sin
+              necesidad de asesoramiento.</span>
+          </p>
+        </div>
+        <img src="/images/cover-all.png" alt="" class="block max-w-[562px] mx-auto w-full sm:w-1/2 sm:flex-1 sm:self-end sm:mx-0">
+      </div>
+    </section>
+
+    <section class="w-full py-12 px-2.5">
+      <div class="w-full max-w-screen-xl mx-auto">
+        <h2 class="text-center mb-2.5 text-[#1C83C6] text-xl sm:text-[40px] sm:leading-[52px] font-bold">
+          Confiable para todos
+        </h2>
+        <p class="text-center text-base sm:text-xl sm:leading-[34px] mb-4 text-[#777777]">
+          Descubra por qué miles de inversores mexicanos se han unido al programa
+        </p>
+        <div class="flex flex-col justify-center items-center gap-8 sm:flex-row sm:flex-wrap sm:items-stretch">
+          <article
+            class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-four.svg" alt="" class="block mx-auto mb-2.5 size-[94px] object-contain">
+            <h3 class="text-center text-[19px] leading-6 mb-2.5">
+              Confiable
+            </h3>
+            <p class="text-center text-[#777777]">
+              Ya son miles los ciudadanos mexicanos que participan
+            </p>
+          </article>
+          <article
+            class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-five.svg" alt="" class="block mx-auto mb-2.5 size-[94px] object-contain">
+            <h3 class="text-center text-[19px] leading-6 mb-2.5">
+              Seguro
+            </h3>
+            <p class="text-center text-[#777777]">
+              Plataforma segura y regulada
+            </p>
+          </article>
+          <article
+            class="flex-1 min-w-[250px] max-w-[350px] rounded-[9px] card border-[#EDEDED] border-[2px] bg-white p-5 sm:p-10 w-full">
+            <img src="/images/cover-card-six.svg" alt="" class="block mx-auto mb-2.5 size-[94px] object-contain">
+            <h3 class="text-center text-[19px] leading-6 mb-2.5">
+              Regulado
+            </h3>
+            <p class="text-center text-[#777777]">
+              Proceso de retiro verificado
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full">
+      <img src="/images/bg-last.png" alt="" class="w-full min-h-[260px] object-cover">
+      <div class="w-full flex flex-wrap py-12 px-4 gap-[50px] justify-center max-w-[900px] mx-auto items-center *:w-full *:block *:max-w-[100px] *:max-h-[64px] *:object-contain">
+        <img src="/images/icon-visa.svg" alt="visa">
+        <img src="/images/icon-master.svg" alt="master">
+        <img src="/images/icon-maestro.svg" alt="maestro">
+        <img src="/images/icon-money.svg" alt="money">
+        <img src="/images/icon-wire.svg" alt="wire">
+        <img src="/images/icon-jones.svg" alt="jones">
+        <img src="/images/icon-nasdaq.svg" alt="nasdaq">
+        <img src="/images/icon-diners.svg" alt="diners">
+        <img src="/images/icon-borse.svg" alt="borse">
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full bg-[#235B4E] pt-5 pb-[15px] px-2.5 sm:pt-12 sm:pb-8 sm:px-5 text-white text-center">
+    <img src="/images/cover-hero-one.png" alt="" class="w-full mx-auto max-w-[210px] mb-10">
+    <ul class="w-full max-w-[900px] mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-28 mb-8">
+      <li class="flex-1 text-lg leading-[34px]">Términos y Condiciones</li>
+      <li class="flex-1 text-lg leading-[34px]">Política de Privacidad</li>
+      <li class="flex-1 text-lg leading-[34px]">Contacto</li>
+    </ul>
+    <small class="block w-full max-w-screen-xl mx-auto text-base">
+      Esta página web no es una agencia de noticias, una página informativa ni un blog. Es una página web cuyo propósito es
+      ofrecer literatura promocional que
+      emplea técnicas narrativas para ilustrar el alcance de los productos y servicios ofrecidos. Por lo tanto, la historia
+      que se relata en esta página es un
+      publirreportaje, o anuncio con fines informativos o funcionales, para una mejor comprensión del potencial de la idea
+      propuesta. Advertencia general de
+      riesgo: las actividades de inversión son sumamente riesgosas y podrían acarrear la pérdida total del dinero invertido.
+      Por esta razón, estas actividades
+      podrían no ser adecuadas para todo tipo de inversionistas. Usted no debe invertir dinero que no pueda permitirse perder.
+    </small>
+  </footer>
+  <script src="/main.js" async defer type="text/javascript"></script>
+</body>
+</html> 
